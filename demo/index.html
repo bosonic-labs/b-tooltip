@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Demo</title>
+    <meta charset="utf-8">
+    <script src="js/bosonic-polyfills.js"></script>
+    <script src="js/b-tooltip.js"></script>
+    <link href="css/b-tooltip.css" rel="stylesheet">
+</head>
+<body>
+    <label for="my-input">Label</label>
+    <input id="my-input" type="text" value="" placeholder="Value...">
+    <b-tooltip target="#my-input" position="bottom center">
+        <p>This is an exciting input field!</p>
+    </b-tooltip>
+    <style>
+        .tooltip-element.tooltip-theme-arrows .tooltip-content {
+            background: white;
+            color: black;
+            border: 1px solid black;
+        }
+    </style>
+</body>

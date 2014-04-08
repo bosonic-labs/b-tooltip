@@ -1,0 +1,24 @@
+<element name="b-tooltip">
+    <link href="../lib/tooltip-theme-arrows.css" rel="stylesheet">
+    <style>
+        :host {
+            display: none;
+        }
+    </style>
+    <script src="../lib/tooltip.js"></script>
+    <script>
+        ({
+            get position() {
+                return this.getAttribute('position') || 'top left';
+            },
+
+            attachedCallback: function() {
+                this.tip = new Tooltip({
+                    target: document.querySelector(this.getAttribute('target')),
+                    position: this.position,
+                    content: this.innerHTML
+                });
+            }
+        });
+    </script>
+</element>
