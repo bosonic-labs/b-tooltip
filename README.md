@@ -27,5 +27,9 @@ Otherwise, you can download and include in your HTML file the builded CSS & JS f
 ## API
 
 ### Attributes
-- __target__: a CSS selector that points to the element the tooltip must be attached to.
-- __position__: where the tooltip must be attached (possible values: 'top left', 'left top', 'left middle', 'left bottom', 'bottom left', 'bottom center', 'bottom right', 'right bottom', 'right middle', 'right top', 'top right', 'top center'.
+- __target__: A CSS selector that points to the element the tooltip must be attached to.
+- __position__: Where the tooltip must be attached, possible values are: 
+    - ```top left```, ```top center```, ```top right```
+    - ```bottom left```, ```bottom center```, ```bottom right```
+    - ```right top```, ```right middle```, ```right bottom```
+    - ```left top```, ```left middle```, ```left bottom```
